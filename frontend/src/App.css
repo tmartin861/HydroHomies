@@ -1,0 +1,539 @@
+.App {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(25px);
+  color: white;
+}
+
+ img[id^="plantImage_"] {
+    width: 200px;
+}
+
+.plant-info img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.plant-container {
+  position: relative;
+  font-size: large;
+  width: 200px;
+  word-wrap: anywhere;
+  padding: 16px;
+  box-sizing: border-box;
+  vertical-align: center;
+}
+
+.plant-container:hover .plant-info {
+  display: block;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.plant-container:hover .plant-info {
+  opacity: 1;
+}
+
+.plant-info {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s;
+  font-size: 15px;
+}
+
+.button{
+    background-color: rgb(148, 175, 159);
+    color: white;
+}
+
+.clickedButton{
+    background-color: rgb(38, 77, 0);
+    color: white;
+}
+
+.xButton{
+    background-color: rgb(148, 175, 159);
+    color: white;
+    vertical-align: 20%;
+
+}
+
+.removeButton{
+    background-color: rgb(148, 175, 159);
+    color: white;
+}
+
+.usersCollection{
+    display: inline-block;
+    margin:0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.overwater-info div {
+    max-width: 1200px;
+    word-wrap: break-word;
+}
+
+.login-page {
+  background-image: url("wallpaper.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(148, 175, 159);
+  font-weight: bold;
+}
+
+.logged-in {
+  background-image: url("wallpaper2.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(148, 175, 159);
+  font-weight: bold;
+}
+
+.profile {
+    max-width: 35%;
+    border-radius: 55%;
+    padding: 15px;
+}
+
+#profilePage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.5em;
+  font-weight: bold;
+  background-color: #faffe8;
+  color: rgb(148, 175, 159);
+  text-align: center;
+  height: 120px;
+}
+
+.linksButton{
+    background-color: transparent;
+    border: none !important;
+    color: black;
+}
+
+.linksButton:hover{
+    background-color: transparent;
+    border: none !important;
+    color: rgb(148, 175, 159);
+}
+
+.citations {
+      font-size: 0.6em;
+      font-weight: bold;
+      background-color: #faffe8;
+      color: rgb(148, 175, 159);
+      text-align: center;
+}
+
+.aboutHydroHomie {
+      font-size: 0.6em;
+      font-weight: bold;
+      background-color: #faffe8;
+      color: rgb(148, 175, 159);
+      text-align: center;
+      padding-right: 200px;
+      padding-left: 200px;
+      padding-top: 5px;
+      padding-bottom: 25px;
+}
+
+.linkedIn {
+    max-width: 10%;
+    border-radius: 55%;
+    background-color: #faffe8;
+}
+
+.currentPlantCart{
+    font-size: 23px;
+    padding: 0px;
+}
+
+.loginButton{
+    background-color: rgb(148, 175, 159);
+    color: white;
+    margin: 5px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #faffe8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.labelName {
+      font-size: 0.8em;
+      font-weight: bold;
+      margin: 1px;
+}
+
+.labelPassword {
+      font-size: 0.8em;
+      font-weight: bold;
+}
+
+#filter-section {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.icsButton{
+    background-color: rgb(148, 175, 159);
+    color: white;
+}
+
+.displayLogin{
+   font-size: 15px;
+   margin-top: 20px;
+   margin-right: 50px;
+   position:absolute;
+   top:0;
+   right:0;
+}
+
+.logoutButton{
+        background-color: rgb(148, 175, 159);
+        color: white;
+        margin-left: 15px;
+}
+
+.dayButton {
+        background-color: #e5e5e5;
+        border: none;
+        color: black;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+      }
+
+.dayButton.active {
+        background-color: rgb(148, 175, 159);
+        color: white;
+}
+
+.emptyCart {
+    font-size: 15px;
+}
+
+.selectWateringDay {
+    font-size: 20px;
+}
+
+.noPlant {
+padding: 100px 450px;
+}
+
+/* 1100 Pixel Width Settings */
+@media only screen and (max-width: 1100px){
+    .logoImage{
+        flex: auto;
+        max-width: 65%;
+        }
+
+    .displayLogin{
+       font-size: 15px;
+       margin-top: 10px;
+       margin-right: 55px;
+       }
+
+    .logoutButton{
+       font-size: 15px;
+       background-color: rgb(148, 175, 159);
+       color: white;
+       margin-left: 5px;
+    }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      td {
+            text-align: center;
+        width: calc(100% / 4);
+      }
+
+
+}
+
+/* 950 Pixel Width Settings */
+@media only screen and (max-width: 950px){
+
+    .logoImage{
+        flex: auto;
+        max-width: 55%;
+        }
+
+    .displayLogin{
+       font-size: 10px;
+       margin-top: 5px;
+       margin-right: 55px;
+       }
+
+    .logoutButton{
+       font-size: 10px;
+       background-color: rgb(148, 175, 159);
+       color: white;
+       margin-left: 5px;
+    }
+
+
+    [id^="plantImage_"] {
+      max-width: 175px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  td {
+        text-align: center;
+    width: calc(100% / 3);
+  }
+
+
+}
+
+/* 650 Pixel Width Settings */
+@media only screen and (max-width: 650px){
+
+    .logoImage{
+        flex: auto;
+        max-width: 35%;
+        }
+
+    .displayLogin{
+       font-size: 10px;
+       margin-top: 5px;
+       margin-right: 55px;
+       }
+
+    .logoutButton{
+       font-size: 10px;
+       background-color: rgb(148, 175, 159);
+       color: white;
+       margin-left: 5px;
+    }
+
+
+    [id^="plantImage_"] {
+      max-width: 175px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  td {
+        text-align: center;
+    width: calc(100% / 3);
+  }
+
+}
+
+/* 550 Pixel Width Settings */
+@media only screen and (max-width: 550px){
+
+    .logoImage{
+        flex: auto;
+        max-width: 35%;
+        }
+
+    .displayLogin{
+       margin-top: 45px;
+       margin-right: 185px;
+       font-size: 10px;
+       }
+
+    .logoutButton{
+       font-size: 10px;
+       background-color: rgb(148, 175, 159);
+       color: white;
+       margin-left: 5px;
+    }
+
+    .loginDiv {
+        display: block;
+    }
+
+    .plant-container{
+    font-size: 10px;
+    }
+
+    plant-info > p{
+    font-size: 5px;
+    }
+
+        [id^="plantImage_"] {
+          max-width: 175px;
+        }
+
+      td {
+        display: block;
+        width: 100%;
+      }
+
+}
+
+/* 500 Pixel Width Settings */
+@media only screen and (max-width: 500px){
+
+    .logoImage{
+        flex: auto;
+        max-width: 35%;
+        }
+
+    .displayLogin{
+       margin-top: 80px;
+       margin-right: 185px;
+       font-size: 10px;
+       }
+
+    .logoutButton{
+       font-size: 10px;
+       background-color: rgb(148, 175, 159);
+       color: white;
+       margin-left: 5px;
+    }
+
+    .loginDiv {
+        display: block;
+    }
+
+    .plant-container{
+    font-size: 10px;
+    }
+
+    plant-info > p{
+    font-size: 5px;
+    }
+
+        [id^="plantImage_"] {
+          max-width: 175px;
+        }
+
+      td {
+        display: block;
+        width: 100%;
+      }
+
+}
+
+/* 500 Pixel Width Settings */
+@media only screen and (max-width: 475px){
+
+    .logoImage{
+        flex: auto;
+        max-width: 35%;
+        }
+
+    .displayLogin{
+       margin-top: 80px;
+       margin-right: 185px;
+       font-size: 10px;
+       }
+
+    .logoutButton{
+       font-size: 10px;
+       background-color: rgb(148, 175, 159);
+       color: white;
+       margin-left: 5px;
+    }
+
+    .loginDiv {
+        display: block;
+    }
+
+    .plant-container{
+    font-size: 10px;
+    }
+
+    plant-info > p{
+    font-size: 5px;
+    }
+
+        [id^="plantImage_"] {
+          max-width: 175px;
+        }
+
+      td {
+        display: block;
+        width: 100%;
+      }
+
+}
